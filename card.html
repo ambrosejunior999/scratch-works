@@ -37,7 +37,7 @@ border: 2px solid red;
 background-color: transparent;
 background-color: orange;
 width: 100px;
-margin-left: 550px;
+margin-left: 400px;
   }
   #signup{
 font-weight: bolder;
@@ -51,16 +51,25 @@ width: 100px;
   #input{
     height: 40px;
     margin-top:20px;
-    width: 250px;
+    width: 280px;
     margin-left: 200px;
+    font-weight: bold;
+    border: 1px solid red;
+  }
+  #input::placeholder{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
     </style>
 </head>
 <body style="background-color: rgb(220, 220, 238);">
     <nav id="nav">
-<input type="search" name="" id="input">
-<h5>help <button></button></h5>
-<h5>Carts <button></button></h5>
+<input type="search" name="" id="input" placeholder="Search for products, brands and categories">
+<section style="margin-top: 20px;display: flex;">
+<h5>Help <button style="background-color: transparent;border:none;"><img src="../boostrap/question-octagon-fill.svg" alt=""></button></h5>
+<h5>Carts <button style="background-color: transparent;border:none;"><img src="../boostrap/cart.svg" alt=""></button></h5>
+</section>
 <section style="margin-top: 20px;">
 <button id="login">LOGIN</button>
 <button id="signup">SIGN UP</button>
@@ -69,7 +78,7 @@ width: 100px;
     <nav id="nav2">
 <h6 style="margin-top: 4vh;">All Categories<button></button></h6>
 <h6 style="margin-top: 4vh;">Electronics <button style="background-color: transparent;border: none;margin-right: 10px;"><i class="fa fa-solid fa-laptop-mobile"></i></button></h6>
-<h6 style="margin-top: 4vh;">Phones & Tablets<button><img src="../boostrap/headset.svg" alt=""></button></h6>
+<h6 style="margin-top: 4vh;">Phones & Tablets<button style="background-color: transparent;border:none;"><img src="../boostrap/headset.svg" alt=""></button></h6>
 <h6 style="margin-top: 4vh;">Computers & Accessories<button></button></h6>
 <h6 style="margin-top: 4vh;">Clothing<button><i class="fa fa-solid fa-clothes-hanger"></i></button></h6>
     </nav>
