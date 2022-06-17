@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test3.css">
+</head>
+<body>
+    <div class="container"> 
+        <!-- <h1>Simple JavaScript Shopping Cart</h1>
+        <p>Simplified 'add to cart' functionality. Uses Javascript
+        and WebStorage API/Cookies to remember cart data converted to JSON format.</p>
+        <p>Click 'Empty Cart' button to remove session cookies from browser.</p> -->
+        <div id="alerts"></div>
+     <div class="productcont">
+             <div class="product">
+                 <h3 class="productname">Product 1</h3>
+                 <p>Product description excerpt...</p>
+                 <p class="price">$5</p>
+                 <button class="addtocart">Add To Cart</button>
+             </div>
+             <div class="product">
+                <h3 class="productname">Product 1</h3>
+                <p>Product description excerpt...</p>
+                <p class="price">$5.05</p>
+                <button class="addtocart">Add To Cart</button>
+            </div>
+            
+             <div class="product">
+                 <h3 class="productname">Product 2</h3>
+                 <p>Product description excerpt...</p>
+                 <p class="price">$8.50</p>
+                 <button class="addtocart">Add To Cart</button>
+             </div>
+             <div class="product">
+                 <h3 class="productname">Product 3</h3>
+                 <p>Product description excerpt...</p>
+                 <p class="price">$10.50</p>
+                 <button class="addtocart">Add To Cart</button>
+             </div>
+             </div>
+             </div>
+             <div class="cart-container">
+                <button class="close-modal">&times;</button>
+               <h2>Cart</h2>
+               <table>
+                 <thead>
+                   <tr>
+                   <th><strong>Product</strong></th>
+                   <th><strong>Price</strong></th>
+                 </tr>
+                 </thead>
+                 <tbody id="carttable">
+                 </tbody>
+               </table>
+               <hr>
+               <table id="carttotals">
+                 <tr>
+                   <td><strong>Items</strong></td>
+                   <td><strong>Total</strong></td>
+                 </tr>
+                 <tr>
+                   <td>x <span id="itemsquantity">0</span></td>
+                  
+                   <td>$<span id="total">0</span></td>
+                 </tr></table>
+     
+                 
+               <div class="cart-buttons">  
+                 <button id="emptycart">Empty Cart</button>
+                 <button id="checkout">Checkout</button>
+               </div>
+             </div>
+     
+     <script src="test3.js"></script>
+</body>
+</html>

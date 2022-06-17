@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: century gothic;
+    background-color: rgb(32, 31, 31);
+  }
+  .wrapper {
+    width: 39vw;
+    height: auto;
+  }
+  .row {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .row .card {
+    width: 250px;
+    height: 300px;
+    border: 1px solid black;
+    box-shadow: 0 5px 10px 1px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.2s linear;
+    background-color: white;
+  }
+  .row .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 10px 1px;
+  }
+  .row .card .image {
+    overflow: hidden;
+    height: 20vh;
+    background: url("./images/1d.jfif");
+    background-position: center;
+    background-size: cover;
+  }
+  .product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px; 
+  }
+  .product .product-name {
+    padding-left: 10px;
+    font-weight: bold;
+  }
+  .product .product-author {
+    padding-right: 10px;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: grey;
+    cursor: pointer;
+  }
+  .product .product-author:hover {
+    text-decoration: underline;
+  }
+  .card .product-rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 20px;
+  }
+  .card .product-rating i:nth-child(1) {
+    padding-left: 10px;
+  }
+  .card .product-rating i:nth-child(-n+4) {
+    color: red;
+  }
+  /* .card .description {
+   
+  } */
+  .card .description p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 5px 10px 0 10px;
+    font-size: 0.8rem;
+    height: 50px;
+  }
+  .card .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+  }
+  .card .price div .before-price {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-weight: bold;
+    text-decoration: line-through;
+    background-color: black;
+    color: #ff2323;
+    border-radius: 5px;
+  }
+  .card .price div .now-price {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+  }
+  .card .price button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 2px 1px black;
+    transition: 0.25s;
+  }
+  .card .price button:hover {
+    box-shadow: 0 0 10px 1px black;
+  }
+  @media only screen and (max-width: 900px) {
+    .row {
+      flex-wrap: wrap;
+    }
+  }
