@@ -36,8 +36,9 @@ height: 45px;
 border: none;
 background-color: transparent;
 width: 100px;
-margin-left: 200px;
+margin-left: 100px;
 font-family: 'Fascinate', cursive;
+box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   }
   #signup{
 font-weight: bolder;
@@ -45,7 +46,7 @@ border-radius: 25px;
 height: 45px;
 border: none;
 background-color: transparent;
-
+box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 width: 100px;
 font-family: 'Fascinate', cursive;
   }
@@ -69,14 +70,15 @@ font-family: 'Fascinate', cursive;
   #login:hover{
 transition: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 background: black;
-transition: 1s;
+/* transition: 0.5s; */
+transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.6s;
 color: red;
 border: 2px solid red;
   }
   #signup:hover{
-    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+transition:all cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.6s;
 background: black;
-transition: 1s;
+transition: 0.5s;
 color: red;
 border: 2px solid red;
   }
@@ -130,15 +132,47 @@ display: none;
     height: 50vh;
     border: 1px solid black;
   }
+  #clock{
+    border: 1px solid black;
+    height: 30px;
+    width: 120px;
+    text-align: center;
+    border-radius: 3px;
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  section:focus-within #pack {
+   position: absolute;
+   display: inherit;
+  }
+  #pack{
+    display: none;
+  }
     </style>
 </head>
 <body style="background-color: rgb(220, 220, 238);">
     <nav id="nav">
         <h1 style="font-family: 'Monoton', cursive;font-weight: bolder;margin-top: 10px;color: red;"><span style="color: green;">SKATC</span>h<span style="color: black;">...</span></h1>
 <input type="search" name="" id="input" placeholder="Search for products, brands and categories">
+<section id="pack">
+    <h3>welcome</h3>
+    <h3>to</h3>
+    <h3>Emperorj tv</h3>
+        </section>
 <section style="margin-top: 20px;display: flex;">
 <h5 style="margin-left: 50px;">Help <button style="background-color: transparent;border:none;"><img src="../boostrap/question-octagon-fill.svg" alt=""></button></h5>
 <h5 style="margin-left: 15px;">Carts <button style="background-color: transparent;border:none;"><img src="../boostrap/cart.svg" alt=""></button></h5>
+<div id="clock" style="display: flex;">
+    <h5 id="h5" style="margin-left: 13px;">
+        <span id="hr"></span>
+        <span>:</span>
+        <span id="min"></span>
+        <span>:</span>
+        <span id="sec"></span>
+    </h5>
+</div>
 </section>
 <section style="margin-top: 20px;">
 <button id="login">LOGIN</button>
@@ -187,7 +221,7 @@ display: none;
             <li></li>
             <li></li>
           </ul>
-          <a href="#">Add to cart</a>
+          <a href="#" onclick="cart()">Add to cart</a>
         </div>
       </div>
       <div class="item2">
@@ -209,7 +243,7 @@ display: none;
             <li></li>
             <li></li>
           </ul>
-          <a href="#">Add to cart</a>
+          <a href="#" onclick="cart()">Add to cart</a>
         </div>
       </div>
       <div class="item3">
@@ -231,7 +265,7 @@ display: none;
             <li></li>
             <li></li>
           </ul>
-          <a href="#">Add to cart</a>
+          <a href="#" onclick="cart()">Add to cart</a>
         </div>
       </div>
       <div class="item4">
@@ -253,7 +287,7 @@ display: none;
             <li></li>
             <li></li>
           </ul>
-          <a href="#">Add to cart</a>
+          <a href="#" onclick="cart()">Add to cart</a>
         </div>
       </div>
       </div>

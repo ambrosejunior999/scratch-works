@@ -94,10 +94,11 @@ body {
     height: 340px;
     background: #fff;
     -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0.25);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    /* box-shadow: 0 5px 15px rgba(0,0,0,0.25); */
     border-radius: 5px;
     overflow: hidden;
     transition: 1s;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
   }
 
   .item4 .img-box{
