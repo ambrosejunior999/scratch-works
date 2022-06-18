@@ -17,6 +17,7 @@ function menutoggle() {
 updateCartTotal();
 let cartCon = document.querySelector('.cart-container');
 let cont = document.querySelector('.container');
+let checkOut = document.querySelector('#checkout');
 /* button event listeners */
 document.getElementById("emptycart").addEventListener("click", emptyCart);
 var btns = document.getElementsByClassName('addtocart');
@@ -31,6 +32,9 @@ for(let i = 0;i<btns.length;i++){
         cont.classList.add('blur');
     });
 }
+checkOut.addEventListener('click', function(){
+window.location.href = 'checkoutCart.html';
+});
 const btnCloseModal = document.querySelector('.close-modal');
 btnCloseModal.addEventListener('click', function(){
     cartCon.style.display = 'none';
@@ -143,4 +147,7 @@ function emptyCart() {
           alerts.classList.remove("message");
       }
     }
+}
+function checkOut(){
+  
 }
