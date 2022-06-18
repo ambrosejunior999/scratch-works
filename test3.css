@@ -19,6 +19,86 @@ hr {
   display:block;
   margin-left:0; */
 }
+.promo-bar-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+#collapsed-menu {
+display: none;
+}
+#promo-bar {
+  background-color: black;
+  color: white;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: 0;
+  max-height: 75px;
+  width: 100%;
+  padding: 5px 150px 5px 150px;
+}
+
+#promo-bar h3 {
+  font-size: 16px;
+  padding: 5px;
+}
+
+#promo-bar p {
+  font-size: 11px;
+  padding: 2px;
+}
+
+#promo-bar a {
+  color: #fff;
+}
+
+#promo-bar a:hover {
+  opacity: .8;
+  color: #fff;
+}
+
+
+@media only screen and (max-width: 990px) {
+li {
+  list-style: none;
+}
+
+.user-link {
+  font-size: 11px;
+  display: inline;
+  float: left;
+  margin: 10px 7px;
+  padding: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.desktop-link {
+  display: none;
+}
+.collapsed-user-menu {
+  background: #d3d3d3;
+  height: 70px;
+  width: 200%;
+  margin-left: -50px;
+}
+#promo-bar {
+  display:none;
+}
+#collapsed-menu {
+  display: block;
+}
+#menu-logo {
+  width: 50%;
+  margin-left: -20px;
+}
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr; 

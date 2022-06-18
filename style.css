@@ -34,6 +34,10 @@ html{
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
 }
+
+/* Navbar */
+
+/* end of navbar */
 /* body{
   
 } */
@@ -42,6 +46,11 @@ section{
     padding:2rem 9%;
     background-color: rgb(29, 28, 28);
   
+}
+.hh{
+    margin-top: 20vh;
+    margin-left: 40vw;
+    font-size: 27px;
 }
 /* End of Default */
 /* Navbar */
@@ -116,6 +125,12 @@ section{
     height: 40vh;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     
+  }
+  /* .btn{
+    
+  } */
+  .dig{
+    height: 40vh;
   }
   .cart-container {
     border:1px solid #E0E4CC;
@@ -207,39 +222,6 @@ section{
       -o-transform: scale(1.2, 1.2);
       -ms-transform: scale(1.2, 1.2);
       transform: scale(1.2, 1.2);
-  }
-  @media all and (max-width:833px){
-      .productcont{
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          margin-left: 8vh;
-      }
-      .product{
-          width: 23vw;
-      }
-  
-  }
-  @media all and (max-width:640px){
-      .productcont{
-          display: grid;
-          grid-template-columns: 1fr 1fr ;
-          margin-left: 8vh;
-      }
-      .product{
-          width: 30vw;
-      }
-  
-  }
-  @media all and (max-width:522px){
-      .productcont{
-          display: grid;
-          grid-template-columns: 1fr ;
-          margin-left: 8vh;
-      }
-      .product{
-          width: 60vw;
-      }
-  
   }
 /* end of body */
 
@@ -336,6 +318,65 @@ section{
         transform-origin: top right;
         transition: none;
     }
+    
+  @media all and (max-width:833px){
+    .productcont{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 8vh;
+    }
+    .product{
+        width: 23vw;
+    }
+
+}
+@media all and (max-width:640px){
+    .productcont{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        margin-left: 8vh;
+    }
+    .product{
+        width: 30vw;
+    }
+    .dig{
+        margin-top: 15vh;
+    }
+
+}
+@media all and (max-width:522px){
+    .productcont{
+        display: grid;
+        grid-template-columns: 1fr ;
+        margin-left: 8vh;
+    }
+    .product{
+        width: 60vw;
+    }
+    .dig{
+        margin-top: 67vh;
+    }
+}
+    @media (max-width:450px){
+
+        html{
+            font-size: 70%;
+        }
+        .dig{
+    padding: 2rem;
+    width: 9vw;
+    height: 33vh;
+        }
+        .adj{
+            display: none;
+        }
+    
+    }
+    @media all and (max-width:417px){
+    
+    }
+}
+/* End of Media Queries */
 
     .header .navbar.active{
         transform: scale(1);
@@ -349,12 +390,5 @@ section{
         margin:2.5rem;
     }
 
-}
 
-@media (max-width:450px){
 
-    html{
-        font-size: 50%;
-    }
-
-}
