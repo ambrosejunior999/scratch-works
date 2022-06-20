@@ -22,7 +22,7 @@ canvas {
     box-sizing: border-box;
     outline: none; border: none;
     text-transform: capitalize;
-    transition: all .2s ease-out;
+    transition: all .5s ease-out;
     text-decoration: none;
    
    
@@ -54,7 +54,75 @@ section{
 }
 /* End of Default */
 /* Navbar */
+.nav{
+    height: 10vh;
+    background-color: #c23333;
+    display: flex;
+    justify-content: space-between;
 
+    
+}
+.sell{
+    color: #fff;
+    font-size: 13px;
+    padding: 19px;
+}
+#searchBar{
+    margin-top: 3vh;
+    border-bottom-left-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+    font-size: .95rem;
+    height: 3.02vh;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    width: 42vw;
+    margin-left: 2vh;
+   
+ 
+}
+.scion{
+   
+    color: #000;
+    height: 4vh;
+    margin-top: 2.5vh;
+    background-color: #fff;
+}
+.scion:hover{
+    background-color: #c23333;
+    color: blue;
+    border: none;
+}
+.faq{
+    background-color: #fff;
+    width:8vw;
+    height: 15vh;
+    position: absolute;
+    top: 10%;
+    left: 57.2%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+}
+.help{
+    color: #fff;
+    font-size: 13px;
+    padding: 19px;
+}
+.sur{
+    padding: 19px;
+}
+
+.sur:hover .faq{
+    display: inline-block;
+    
+}
+.myCart{
+    padding: 19px;
+    font-size: 14px;
+    background-color: green;
+}
+.myCart:hover{
+    background-color: #c23333;
+}
 /* .header{
     padding:2rem 9%;
     position: fixed;
@@ -95,6 +163,8 @@ section{
     cursor: pointer;
     display: none;
 } */
+
+
 /* END OF NAVBAR */
 
 /* body */
@@ -161,7 +231,7 @@ section{
   }
   button:hover, button:focus, button:active, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
       background: #A7DBD8;
-      border-color:#69D2E7;
+/*       border-color:#69D2E7; */
       color:#000;
       cursor: pointer;
   }
