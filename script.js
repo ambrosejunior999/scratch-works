@@ -1,45 +1,34 @@
-/* 'use strict';
- 
-     
-var MenuItems = document.getElementById('MenuItems');
-MenuItems.style.maxHeight = '0px';
-
-function menutoggle() {
-  if (MenuItems.style.maxHeight == '0px') {
-    MenuItems.style.maxHeight = '200px';
-  } else {
-    MenuItems.style.maxHeight = '0px';
-  }
-} */
 /* get cart total from session on load */
-
-
-updateCartTotal();
 let cartCon = document.querySelector('.cart-container');
 let cont = document.querySelector('.container');
+let cart = document.querySelector('.myCart');
 let checkOut = document.querySelector('#checkout');
+let input = document.querySelector('#searchBar');
+cart.addEventListener('click', function(){
+    window.location.href = "cart.html";
+})
+checkOut.addEventListener('click', function(){
+    window.location.href = 'checkoutCart.html';
+    });
+updateCartTotal();
+
 /* button event listeners */
 document.getElementById("emptycart").addEventListener("click", emptyCart);
 var btns = document.getElementsByClassName('addtocart');
 for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener('click', function() {
-      addToCart(this);
-      });
+    btns[i].addEventListener('click', function() {addToCart(this);});
 }
 for(let i = 0;i<btns.length;i++){
     btns[i].addEventListener('click', function(){
         cartCon.style.display = 'block';
         cont.classList.add('blur');
-    });
+    })
 }
-checkOut.addEventListener('click', function(){
-window.location.href = 'checkoutCart.html';
-});
 const btnCloseModal = document.querySelector('.close-modal');
 btnCloseModal.addEventListener('click', function(){
     cartCon.style.display = 'none';
     cont.classList.toggle('blur');
-});
+})
 /* ADD TO CART functions */
 
 function addToCart(elem) {
@@ -148,6 +137,17 @@ function emptyCart() {
       }
     }
 }
-function checkOut(){
+// search buttton filter
+const searchEl = document.querySelector('#searchBar');
+const x = document.querySelectorAll('.product p:nth-child(2)');
+function search(e){
+    x.forEach((item,index) => {
+      if(!item.innerHTML.toLowerCase().includes(e.target.value)){
+        item.parentElement.style.display = 'none';
+      }else {
+        item.parentElement.style.display = 'block';
+      }
+    })
+  }
   
-}
+  searchEl.addEventListener("keyup", search);  

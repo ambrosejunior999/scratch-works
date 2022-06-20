@@ -22,7 +22,7 @@ canvas {
     box-sizing: border-box;
     outline: none; border: none;
     text-transform: capitalize;
-    transition: all .5s ease-out;
+    transition: all ease-in-out 0.3s;
     text-decoration: none;
    
    
@@ -55,7 +55,7 @@ section{
 /* End of Default */
 /* Navbar */
 .nav{
-    height: 10vh;
+    height: 100%;
     background-color: #c23333;
     display: flex;
     justify-content: space-between;
@@ -67,6 +67,16 @@ section{
     font-size: 13px;
     padding: 19px;
 }
+.buy{
+    display: flex;
+    margin: auto;
+}
+.addtocart{
+    padding: 1rem;
+    display: flex;
+    margin: auto;
+
+}
 #searchBar{
     margin-top: 3vh;
     border-bottom-left-radius: 0.25rem;
@@ -77,6 +87,7 @@ section{
     padding-right: 0.625rem;
     width: 42vw;
     margin-left: 2vh;
+    border-radius: 1em;
    
  
 }
@@ -86,6 +97,7 @@ section{
     height: 4vh;
     margin-top: 2.5vh;
     background-color: #fff;
+    border-radius: 2em;
 }
 .scion:hover{
     background-color: #c23333;
@@ -186,21 +198,35 @@ section{
     grid-gap: 1em;
   
   }
+  .img{
+    display: flex;
+    margin: auto;
+    max-width: 100%;
+    
+  }
+  .des{
+    max-width: 100%;
+    min-width: 100%;
+ 
+  }
   .product {
     padding:1em; 
     border:1px solid #E0E4CC; 
     margin-right:1em; 
     border-radius:5px;
     width: 20vw;
-    height: 40vh;
+    height: 45vh;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     
+  }
+  .productname{
+    font-size: 8px;
   }
   /* .btn{
     
   } */
   .dig{
-    height: 40vh;
+    height: 45vh;
   }
   .cart-container {
     border:1px solid #E0E4CC;
