@@ -54,11 +54,15 @@ section{
 }
 /* End of Default */
 /* Navbar */
-.nav{
+nav{
     height: 100%;
     background-color: #c23333;
     display: flex;
     justify-content: space-between;
+     text-align: left;
+    overflow: hidden;
+    transition: all 0.4s ease;
+
 
     
 }
@@ -215,7 +219,7 @@ section{
     margin-right:1em; 
     border-radius:5px;
     width: 20vw;
-    height: 45vh;
+    height: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     
   }
@@ -372,7 +376,9 @@ section{
 
 
 
-
+.alternate{
+    display: none;
+}
 
 
 
@@ -395,25 +401,6 @@ section{
 
 }
 
-@media (max-width:768px){
-
-    #menu-btn{
-        display: initial;
-    }
-
-    .header .navbar{
-        position: absolute;
-        top:115%; right: 2rem;
-        border-radius: .5rem;
-        box-shadow: var(--box-shadow);
-        width: 30rem;
-        border: var(--border);
-        background: #fff;
-        transform: scale(0);
-        opacity: 0;
-        transform-origin: top right;
-        transition: none;
-    }
     
   @media all and (max-width:833px){
     .productcont{
@@ -426,6 +413,63 @@ section{
     }
 
 }
+@media all and (max-width:839px)
+{
+    nav{
+        display: none;
+    }
+    .button{
+        width: 48px;
+        height: 48px;
+        background: #c23333;
+        padding: 12px;
+        display: inline-block;
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+        padding-top: 8px;
+        line-height: 8px;
+        text-align: left;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 201;
+        
+    }
+    
+/* I hide the checkbox because I only need the label */
+
+#check:checked ~ .button span:nth-child(1){
+    width: 100%;
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+#check:checked ~ .button span:nth-child(2){
+    width: 0;
+}
+
+#check:checked ~ .button span:nth-child(3){
+    width: 100%;
+    transform: rotate(-45deg) translateY(-7px) translateX(7px);
+}
+#check:checked ~ .hid{
+    display: block;
+}
+
+.button:hover{
+    background: #ff9d00;
+}
+.button span{
+    height: 3px;
+    width: 100%;
+    background: white;
+    display: inline-block;
+    transition: all 0.5s cubic-bezier(.62,.43,.35,1.47);
+}
+
+}
+
+@media (max-width:768px){
+
+
 @media all and (max-width:640px){
     .productcont{
         display: grid;
@@ -466,25 +510,69 @@ section{
         .adj{
             display: none;
         }
-    
+   
     }
-    @media all and (max-width:417px){
-    
+    @media all and (max-width:395px){
+    .dig{
+        width: 1vw;
+        margin-right: 178vh;
+        display: none;
+    }
+    .alternate{
+        display: block;
+    }
     }
 }
+
+
 /* End of Media Queries */
 
-    .header .navbar.active{
-        transform: scale(1);
-        opacity: 1;
-        transition: .2s ease-out;
-    }
+#check{
+    display: none;
+}
+.hid{
+   
+    height: 100%;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position:relative;
+    top: 7.4vh;
+    display: none;
+}
+.hid1{
+    border: 0.1px solid #c23333;
+    border-top: 0;
+    border-right: 0;
+    height: 13vh;
+    padding: 28px;
 
-    .header .navbar a{
-        font-size: 2rem;
-        display: block;
-        margin:2.5rem;
-    }
+}
+.hid2{
+    border: 0.1px solid #c23333;
+    border-top: 0;
+    border-right: 0;
+    height: 13vh;
+    padding: 28px;
+}
+.hid3{
+    border: 0.1px solid #c23333;
+    border-top: 0;
+    border-right: 0;
+    height: 13vh;
+    padding: 28px;
+    border-bottom: 0;
+}
+.hid a{
+    color: #000;
+}
+.hidSell{
+    font-size: 18px;
 
 
+ 
+}
 

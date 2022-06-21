@@ -1,181 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="test3.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Css slide toggle</title>
+  <link rel="stylesheet" href="test3.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 </head>
 <body>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://kit.fontawesome.com/71f7ff4363.js"></script>
+	
+<div class="menu">
+  <input type="checkbox" id="check">
+  <label for="check" class="button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <nav>
+        <a href="#">Element 1</a>
+        <a href="#">Element 2</a>
+        <a href="#">Element 3</a>
+    </nav>
+</div>	
 
-<body>
-    <div id="promo-bar">
-        <h3 class="promo-bar-text">LIMITED TIME - 50% off</h3>
-        <p class="promo-bar-text"> <a href="#">Shop Men's</a> </p>
-        <p class="promo-bar-text"> <a href="#">Shop Women's</a> </p>
-        <p class="promo-bar-text"> <a href="#">details</a> </p>
-    </div>
-  <nav class="navbar navbar-expand-lg navbar-light bg-lightr">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="justify-content-center">
-      <div id="top-nav-left">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item desktop-link">
-          <a class="nav-link" href="#"><i class="far fa-user-circle"></i></a>
-        </li>
-        <li class="nav-item desktop-link">
-          <a class="nav-link" href="#"><i class="fas fa-map-marker-alt"></i></a>
-        </li>
-        <li class="nav-item desktop-link">
-          <a class="nav-link" href="#"><i class="fas fa-flag-usa"></i></a>
-        </li>
-      </ul>
+<div class="content">
+    <h1>Section 1</h1>
+</div>
+<div class="content sec2">
+    <h1>Section 2</h1>
+</div>
 
-      <div id="top-nav-center" class="mx-auto mr-aut">
-        <a class="navbar-brand" href="#"><img src="http://alexandriaburns.me/zephyr-small.png" id="menu-logo"></a>
-
-      </div>
-
-      <div id="top-nav-right">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item desktop-link">
-            <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
-          </li>
-          <li class="nav-item desktop-link">
-            <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i></a>
-          </li>
-          <li class="nav-item">
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="search" aria-label="Search">
-              <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-            </form>
-
-            <ul id="collapsed-menu" class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <div class="collapsed-user-menu">
-                <ul>
-                  <li class="user-link">
-                    <a class="nav-link" href="#"><i class="far fa-user-circle"></i><br>Account
-                </li></a>
-
-                    <li class="user-link">
-                      <a class="nav-link" href="#"><i class="fas fa-map-marker-alt"></i><br>Location
-                 </li></a>
-
-                      <li class="user-link"> <a class="nav-link" href="#"><i class="fas fa-flag-usa"></i><br>Language</a>
-                      </li>
-
-                      <li class="user-link"> <a class="nav-link" href="#"><i class="far fa-heart"></i><br>Likes</a>
-                      </li>
-
-                      <li class="user-link"> <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i><br>Bag</a>
-                      </li>
-
-                </ul>
-              </div>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Men </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Women </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Shoes </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Skate </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Snow </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Accessories </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sale </a>
-              </li>
-            </ul>
-      </div>
-    </div>
-    </div>
-  </nav>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
-    <div class="container"> 
-        <!-- <h1>Simple JavaScript Shopping Cart</h1>
-        <p>Simplified 'add to cart' functionality. Uses Javascript
-        and WebStorage API/Cookies to remember cart data converted to JSON format.</p>
-        <p>Click 'Empty Cart' button to remove session cookies from browser.</p> -->
-        <div id="alerts"></div>
-     <div class="productcont">
-             <div class="product">
-                 <h3 class="productname">Product 1</h3>
-                 <p>Product description excerpt...</p>
-                 <p class="price">$5</p>
-                 <button class="addtocart">Add To Cart</button>
-             </div>
-             <div class="product">
-                <h3 class="productname">Product 1</h3>
-                <p>Product description excerpt...</p>
-                <p class="price">$5.05</p>
-                <button class="addtocart">Add To Cart</button>
-            </div>
-            
-             <div class="product">
-                 <h3 class="productname">Product 2</h3>
-                 <p>Product description excerpt...</p>
-                 <p class="price">$8.50</p>
-                 <button class="addtocart">Add To Cart</button>
-             </div>
-             <div class="product">
-                 <h3 class="productname">Product 3</h3>
-                 <p>Product description excerpt...</p>
-                 <p class="price">$10.50</p>
-                 <button class="addtocart">Add To Cart</button>
-             </div>
-             </div>
-             </div>
-             <div class="cart-container">
-                <button class="close-modal">&times;</button>
-               <h2>Cart</h2>
-               <table>
-                 <thead>
-                   <tr>
-                   <th><strong>Product</strong></th>
-                   <th><strong>Price</strong></th>
-                 </tr>
-                 </thead>
-                 <tbody id="carttable">
-                 </tbody>
-               </table>
-               <hr>
-               <table id="carttotals">
-                 <tr>
-                   <td><strong>Items</strong></td>
-                   <td><strong>Total</strong></td>
-                 </tr>
-                 <tr>
-                   <td>x <span id="itemsquantity">0</span></td>
-                  
-                   <td>$<span id="total">0</span></td>
-                 </tr></table>
-     
-                 
-               <div class="cart-buttons">  
-                 <button id="emptycart">Empty Cart</button>
-                 <button id="checkout">Checkout</button>
-               </div>
-             </div>
-     
-     <script src="test3.js"></script>
 </body>
 </html>

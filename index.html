@@ -12,7 +12,13 @@
 </head>
 <body>  
 <!-- Navbar -->
-<div class="nav">
+<input type="checkbox" id="check">
+<label for="check" class="button">
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
+<nav>
   <p class="sell">Log<span>O</span> </p>
   <a href="sell.html" class="sell">Sell With Us</a>
   <a href="sell.html" class="sell">Sell With Us</a>
@@ -40,8 +46,14 @@
       <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
     </svg></button>
   </div>
-</div>
+ <!-- hidden upon page load -->
 
+</nav>
+<div class="hid">
+ <div class="hid1"> <a href="sell.html" class="hidSell">Sell With Us</a> </div>
+ <div class="hid2"> <a href="sell.html" class="hidSell">Sell With Us</a></div>
+ <div class="hid3"> <a href="sell.html" class="hidSell">Sell With Us</a></div>
+ </div>
 
 <!-- end of navbar -->
 <!-- digital services -->
@@ -51,6 +63,7 @@
   <!-- Digital Services -->
 
 <div class="productcont">
+  <button class="alternate">Shop Digitals</button>
   <div class="product">
      <p class="productname">Website Design</p>
   <div class="img">  <img src="./images/web design.jfif" class="des" alt=""></div>
@@ -87,8 +100,10 @@
        </div>
       <!-- Physical Products  -->
        <h2 class="hh">Physical Products</h2>
+       
        <div class="container"> 
       <div class="productcont">
+        <button class="alternate">Shop Physicals</button>
         <div class="product">
            <p class="productname">Website Design</p>
           <img src="./images/empty cart.png" class="buy" alt="">

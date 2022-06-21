@@ -1,252 +1,145 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
-*, ::before, ::after { box-sizing: border-box; }
-body{
-  font-family:'Quicksand', sans-serif;
-  text-align:center;
-  line-height:1.5em;
-/*   background:#E0E4CC; */
- background: #69d2e7;
-background: -moz-linear-gradient(-45deg, #69d2e7 0%, #a7dbd8 25%, #e0e4cc 46%, #e0e4cc 54%, #f38630 75%, #fa6900 100%);
-background: -webkit-linear-gradient(-45deg, #69d2e7 0%,#a7dbd8 25%,#e0e4cc 46%,#e0e4cc 54%,#f38630 75%,#fa6900 100%);
-background: linear-gradient(135deg, #69d2e7 0%,#a7dbd8 25%,#e0e4cc 46%,#e0e4cc 54%,#f38630 75%,#fa6900 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#69d2e7', endColorstr='#fa6900',GradientType=1 );
-}
-hr {
-  border:none;
-  background:#E0E4CC;
-  height:1px;
-/*   width:60%;
-  display:block;
-  margin-left:0; */
-}
-.promo-bar-text {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-  margin: 0 auto;
-  padding: 10px;
-  flex-wrap: wrap;
+* {
+	margin:0 ;
+	padding: 0;
+	box-sizing: border-box;
+   font-family: 'Poppins';
 }
 
-#collapsed-menu {
-display: none;
+/* content */
+.content{
+    width: 100%;
+    height: 100vh;
+    background: url(https://images.unsplash.com/photo-1551334787-21e6bd3ab135?ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    position: relative;
 }
-#promo-bar {
-  background-color: black;
-  color: white;
-  display: flex;
-  position: relative;
-  justify-content: center;
-  top: 0;
-  max-height: 75px;
-  width: 100%;
-  padding: 5px 150px 5px 150px;
+.sec2{
+    background: url(https://images.unsplash.com/photo-1551309292-e185c0b6e22a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
+    background-position: center;
+    background-size: cover;
 }
-
-#promo-bar h3 {
-  font-size: 16px;
-  padding: 5px;
-}
-
-#promo-bar p {
-  font-size: 11px;
-  padding: 2px;
-}
-
-#promo-bar a {
-  color: #fff;
-}
-
-#promo-bar a:hover {
-  opacity: .8;
-  color: #fff;
-}
-
-
-@media only screen and (max-width: 990px) {
-li {
-  list-style: none;
-}
-
-.user-link {
-  font-size: 11px;
-  display: inline;
-  float: left;
-  margin: 10px 7px;
-  padding: auto;
-  text-align: center;
-  flex-wrap: wrap;
-}
-.desktop-link {
-  display: none;
-}
-.collapsed-user-menu {
-  background: #d3d3d3;
-  height: 70px;
-  width: 200%;
-  margin-left: -50px;
-}
-#promo-bar {
-  display:none;
-}
-#collapsed-menu {
-  display: block;
-}
-#menu-logo {
-  width: 50%;
-  margin-left: -20px;
-}
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
-  margin: 1em auto; 
-  background:#FFF; 
-  padding:30px;
-  border-radius:5vh;
-  height: 100%;
-  margin-top: 10vh;
-  width: 100%;
-}
-.productcont {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
-  grid-gap: 1em;
-
-}
-.product {
-  padding:1em; 
-  border:1px solid #E0E4CC; 
-  margin-right:1em; 
-  border-radius:5px;
-  width: 20vw;
-  height: 40vh;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  
-}
-.cart-container {
-  border:1px solid #E0E4CC;
-  border-radius:5000rem;
-  margin-top:1em;
-  padding:133em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
-  background-color: #fff;
-  padding: 6rem;
-  border-radius: 5px;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-  z-index: 10;
-  display: none;
-}
-button, input[type="submit"] { 
-    border:1px solid #FA6900; 
-    color:#fff; 
-    background: #F38630; 
-    padding:0.6em 1em;
-    font-size:1em; 
-    line-height:1; 
-    border-radius: 1.2em;
-    transition: color 0.2s ease-in-out, background 0.2s ease-in-out, border-color 0.2s ease-in-out;
-}
-button:hover, button:focus, button:active, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
-    background: #A7DBD8;
-    border-color:#69D2E7;
-    color:#000;
-    cursor: pointer;
-}
-table {
-  margin-bottom:1em;
-  border-collapse:collapse;
-}
-table td, table th {
-  text-align:left;
-  padding:0.25em 1em;
-  border-bottom:1px solid #E0E4CC;
-}
-#carttotals {
-  margin-right:0;
-  margin-left:auto;
-}
-.cart-buttons {
-  width:auto;
-  margin-right:0;
-  margin-left:auto;
-  display:flex;
-  justify-content:flex-end;
-  padding:1em 0;
-}
-#emptycart {
-  margin-right:1em;
-}
-table td:nth-last-child(1) {
-  text-align:right;
-}
-.message {
-  border-width: 1px 0px;
-  border-style:solid;
-  border-color:#A7DBD8;
-  color:#679996;
-  padding:0.5em 0;
-  margin:1em 0;
-}
-.close-modal{
+h1{
+    font-size: 50px;
     position: absolute;
-    top: 1.2rem;
-    right: 2rem;
-    font-size: 2rem;
-    color: #333;
-    cursor: pointer;
-    border: none;
-    background: none;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
-.blur{
-    overflow:hidden;
-    -webkit-filter: blur(10px);
-    -moz-filter: blur(6px);
-    -o-filter: blur(15px);
-    -ms-filter: blur(15px);
-    filter: blur(15px);
-    -webkit-transform: scale(1, 1.2);
-    -moz-transform: scale(1.2, 1.2);
-    -o-transform: scale(1.2, 1.2);
-    -ms-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2);
-}
-@media all and (max-width:833px){
-    .productcont{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-left: 8vh;
-    }
-    .product{
-        width: 23vw;
-    }
 
-}
-@media all and (max-width:640px){
-    .productcont{
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        margin-left: 8vh;
-    }
-    .product{
-        width: 30vw;
-    }
 
+.menu{
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
 }
-@media all and (max-width:522px){
-    .productcont{
-        display: grid;
-        grid-template-columns: 1fr ;
-        margin-left: 8vh;
-    }
-    .product{
-        width: 60vw;
-    }
+/* I hide the checkbox because I only need the label */
+#check{
+    display: none;
+}
 
+.button{
+  width: 48px;
+  height: 48px;
+  background: rgb(255, 196, 0);
+  padding: 12px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  padding-top: 8px;
+  line-height: 8px;
+  text-align: left;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 201;
 }
+.button:hover{
+  background: #ff9d00;
+}
+.button span{
+  height: 3px;
+  width: 100%;
+  background: white;
+  display: inline-block;
+  transition: all 0.5s cubic-bezier(.62,.43,.35,1.47);
+}
+
+
+/* toggle icon animation */
+#check:checked ~ .button span:nth-child(1){
+    width: 100%;
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+#check:checked ~ .button span:nth-child(2){
+    width: 0;
+}
+
+#check:checked ~ .button span:nth-child(3){
+    width: 100%;
+    transform: rotate(-45deg) translateY(-7px) translateX(7px);
+}
+
+
+/* the nav height is set to 0 when the navbar is closed */
+
+nav{
+    text-align: left;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    height: 0;
+}
+nav a{
+    text-decoration: none;
+    color: #0c1019;
+    display: block;
+    font-size: 18px;
+    transition: all 0.4s cubic-bezier(.22,.43,.35,1.5);
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top;
+    text-align: center;
+    border-bottom: 1px solid #b4ac97;
+}
+
+nav a:hover{
+    background: #ffdd7f;
+}
+
+/* the nav height will be set to the height in pixels that would have for default, using height:auto won't work but you can put that value in pixels creating the slide*/
+#check:checked ~ nav{
+    height: 144px;
+}
+
+#check:checked ~ nav a{
+    padding: 10px;
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* you can edit the direction where the slide starts, changing the height animation to width, but it will take some changes.
+for example:
+
+nav{
+    width: 0%;
+    background: #ffffff;
+    height: auto;
+    max-height 144px;
+    opacity: 0;
+}
+
+#check:checked ~ nav{
+    width: 100%;
+    opacity: 1;
+} 
+
+*/
