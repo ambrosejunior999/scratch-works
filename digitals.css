@@ -58,7 +58,7 @@ nav{
     height: 100%;
     background-color: #c23333;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
      text-align: left;
     overflow: hidden;
     transition: all 0.4s ease;
@@ -113,8 +113,8 @@ nav{
     width:8vw;
     height: 15vh;
     position: absolute;
-    top: 8.7%;
-    left: 75.2%;
+    top: 10%;
+    left: 57.2%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: none;
 }
@@ -132,10 +132,10 @@ nav{
     
 }
 .myCart{
-    padding: 10px;
+    margin-top: 5px;
+    padding: 12px;
     font-size: 14px;
     background-color: green;
-    margin-top: 10px;
 }
 .myCart:hover{
     background-color: #c23333;
@@ -380,6 +380,16 @@ nav{
 .alternate{
     display: none;
 }
+.checkOut{
+    margin-left: 40%;
+width: 30%;
+height: 50vh;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+margin-top: 2% ;
+margin-right: 50%;
+margin-bottom: 2%;
+margin-left: 35%;
+}
 
 
 
@@ -469,7 +479,9 @@ nav{
 }
 
 @media (max-width:768px){
-
+    .checkOut{
+        width: 40vw;
+    }
 
 @media all and (max-width:640px){
     .productcont{
@@ -482,6 +494,9 @@ nav{
     }
     .dig{
         margin-top: 15vh;
+    }
+    .checkOut{
+        width: 40vw;
     }
 
 }

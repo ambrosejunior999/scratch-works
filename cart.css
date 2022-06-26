@@ -70,11 +70,13 @@
 /* position: absolute;
 top: 30%;
 left: 37%; */
-margin-left: 40%;
-width: 30vw;
+width: 30%;
 height: 50vh;
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-margin-top: 5vh;
+margin-top: 2% ;
+margin-right: 50%;
+margin-bottom: 2%;
+margin-left: 35%;
 }
 .cart{
     display: flex;

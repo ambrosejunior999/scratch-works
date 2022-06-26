@@ -6,10 +6,10 @@
   box-sizing: border-box;
 }
 body {
-  background: url(./images/backjj.jfif);
+/*   background: url(./images/backjj.jfif);
   background-size: cover;
-  background-repeat: no-repeat;
-  
+  background-repeat: no-repeat; */
+  background-color: #c23333;
 }
 form {
   height: 520px;
@@ -98,7 +98,3 @@ button {
   margin: 10px 0 4px;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background:url(https://source.unsplash.com/1080x2400?sunset+birdeye+ocean);
-  }}
